@@ -4,6 +4,34 @@ function toggleTheme() {
   document.querySelector(".theme-toggle").textContent = isLight ? "🌚" : "🌞";
 }
 
+
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const toggleBtn = document.getElementById('menuToggleBtn');
+
+    navLinks.classList.toggle('show');
+
+    // Toggle icon: ☰ to ✖
+    if (navLinks.classList.contains('show')) {
+      toggleBtn.textContent = '✖';
+    } else {
+      toggleBtn.textContent = '☰';
+    }
+  }
+
+  // Auto-close menu when a link is clicked (on mobile)
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      const navLinks = document.querySelector('.nav-links');
+      const toggleBtn = document.getElementById('menuToggleBtn');
+      if (navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+        toggleBtn.textContent = '☰';
+      }
+    });
+  });
+
+
 // On page load
 window.addEventListener("DOMContentLoaded", () => {
   const theme = localStorage.getItem("theme");
