@@ -39,6 +39,171 @@ header {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+/* ==========================
+   ✅ Responsive Enhancements
+   ========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* space between links and buttons */
+}
+
+/* .nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+} */
+
+.theme-toggle,
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* Desktop only: hide hamburger */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* .menu-toggle {
+  display: none;
+} */
+
+/* Controls container for theme + hamburger */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-height: 0;
+   overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+
+/* When visible */
+.nav-links.show {
+  max-height: 300px; /* Adjust based on your menu size */
+}
+
+/* Optional: make nav-links animate opacity too */
+.nav-links li {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links.show li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .about-left, .about-right {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form {
+    flex: 1 1 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row input {
+    flex: 1 1 100%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .typed-name {
+    font-size: 1.5rem;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+}
+
 
 .navbar {
   display: flex;
