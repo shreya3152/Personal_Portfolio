@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔹Shreya🔹</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">Shreya</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" onclick="toggleTheme()">🌞</button>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-wrapper">
+      <!-- Terminal -->
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="title">guest@portfolio: ~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <!-- Content will be inserted here via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="hero-content">
+        <span class="badge">Master's Student in Computer Applications</span>
+        <!-- <h1>Hi, I'm <span class="name-highlight">Shreya</span></h1> -->
+        <!-- <h1>Hi, I'm Shreya<span class="cursor">|</span></h1> -->
+
+        <h1 class="typed-name"><span id="typed">Hi, I'm </span><span class="cursor">|</span></h1>
+
+        <p class="subtitle">Turning ideas into clean code & creative interfaces</p>
+        <div class="buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="about-section">
+    <h2 class="about-title">About Me</h2>
+    <div class="about-grid">
+      <!-- Left: About Description -->
+      <div class="about-left">
+
+        <p>I'm a Master's Student in Computer Applications with a passion for building innovative software solutions.
+          With a strong foundation in computer science principles and modern development technologies, I enjoy tackling
+          challenging problems and creating clean, efficient code.</p>
+
+        <p>My academic journey has equipped me with both theoretical knowledge and practical skills. I'm constantly
+          exploring new technologies and methodologies to expand my skillset and stay current with industry trends. I
+          believe in writing code that's not just functional, but also maintainable and elegant.</p>
+
+        <p>When I'm not coding, you can find me exploring new hiking trails, reading tech blogs, or experimenting with
+          home automation projects. I'm always open to new opportunities and collaborations!</p>
+      </div>
+
+      <!-- Right: Journey -->
+      <div class="about-right">
+        <h3 class="journey-title">My Journey</h3>
+        <ul class="timeline">
+          <li>
+            <span class="date">2024 – Present</span>
+            <strong>Master's in Computer Applications</strong>
+            <p>Vellore Institute of Technology, Vellore</p>
+          </li>
+          <li>
+            <span class="date">2021 – 2024</span>
+            <strong>Bachelor's in Computer Applications</strong>
+            <p>Birla Institute of Technology, Mesra</p>
+            <p><b>CGPA : 8.97</b></p>
+          </li>
+          <li>
+            <span class="date">2019 – 2021</span>
+            <strong>CBSE XII</strong>
+            <p> Creane Memorial High School, Gaya</p>
+            <p><b>Percentage: 91</b></p>
+          </li>
+          <li>
+            <span class="date">2019</span>
+            <strong>CBSE X</strong>
+            <p>Elegant Public School, Gaya </p>
+            <p><b>Percentage: 96.6</b></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A short description of your project goes here.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A short description of your project goes here.</p>
+      </div>
+    </div>
+  </section> -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <!-- Project Card -->
+    <div class="project-card">
+      <img src="Assets/Project1.jpg" alt="Project Screenshot">
+      <h3>Network Anomaly Detection using Autoencoders and Reinforcement Learning</h3>
+      <p>A network anomaly detection system using integrated Autoencoder and Reinforcement Learning model.</p>
+      <div class="tech-stack">
+        <span>Autoencoders</span>
+        <span>Reinforcement Learning</span>
+        <!-- <span>MongoDB</span>
+        <span>Stripe</span> -->
+      </div>
+      <div class="project-buttons">
+        <a href="https://github.com/kumarpiyushraj/Network-Anomaly-Detection-using-RL-model-and-Autoencoders-" target="_blank" class="btn">Code</a>
+        <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Assets/Project2.jpg" alt="Project Screenshot">
+      <h3>Fortune Cookie Web App</h3>
+      <p>A light hearted fun web application that allows shows your fortune. This is meant to light up your mood if you are having a bad day.</p>
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS Learning</span>
+        <span>JavaScript</span>
+        <!-- <span>Stripe</span>  -->
+      </div>
+      <div class="project-buttons">
+        <a href="https://github.com/shreya3152/Fortune_Cookie" target="_blank" class="btn">Code</a>
+        <a href="https://shreya3152.github.io/Fortune_Cookie/" target="_blank" class="btn btn-primary">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Assets/Project3.jpg" alt="Project Screenshot">
+      <h3>Superstore Dashboard</h3>
+      <p>A Power BI dashboard project analyzing sales, profit, and customer trends using the Sample Superstore dataset. 
+        Includes KPIs, regional performance, top products, and interactive filtering for actionable business insights.</p>
+      <div class="tech-stack">
+        <span>Data Analytics</span>
+        <span>Power BI</span>
+      </div>
+      <div class="project-buttons">
+        <a href="https://github.com/shreya3152/powerbi-superstore-dashboard" target="_blank" class="btn">Code</a>
+        <a href="Assets/PerfomanceDashboard.pdf" download target="_blank" class="btn btn-primary">Live Demo</a>
+      </div>
+    </div>
+    <!-- Repeat for other projects -->
+  </div>
+
+</section>
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> <a href="mailto:shreyasinha3152@gmail.com">shreyasinha3152@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shreya-sinha-042670170/"
+            target="_blank">Shreya Sinha</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/shreya3152" target="_blank">github.com/shreya3152</a>
+        </p>
+
+        <h3>Quick Links</h3>
+        <div class="quick-links">
+          <a href="#projects">My Projects</a>
+          <a href="Assets/resume.pdf" download>Resume</a>
+          <a href="https://github.com/shreya3152" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/shreya-sinha-042670170/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form id="contact-form">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="your.email@example.com" required>
+          </div>
+          <textarea name="message" rows="5" placeholder="Your message here..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p id="form-status"></p> <!-- For success/failure messages -->
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Shreya Sinha. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
